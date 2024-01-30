@@ -1,9 +1,8 @@
-/* Глобальные стили для проекта, их можно дополнять и менять по желанию */
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  overflow-wrap: break-word;
 }
 
 body {
@@ -29,7 +28,7 @@ ul {
   padding: 0;
   list-style: none;
 }
-  
+
 picture {
   margin: 0;
   padding: 0;
