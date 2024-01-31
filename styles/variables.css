@@ -14,7 +14,7 @@
   --background-image: url(../images/cover-image-dark.png);
 }
 
-@media (width <= 375px) {
+@media (width < 768px) {
   :root {
     --page-padding: 10px;
   }

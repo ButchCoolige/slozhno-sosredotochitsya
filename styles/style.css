@@ -1,6 +1,6 @@
+
 .page {
-  max-inline-size: 1024px;
-  overflow-x: hidden;
+  max-inline-size: 1024px;  
   inline-size: 100%;
   margin: 0 auto;
   color: var(--text-color);
@@ -34,7 +34,6 @@
 
 .header {
   position: relative;
-  overflow: hidden;
   display: grid;
   grid-template-rows: 1fr auto 1fr;
   block-size: 100vh;
@@ -102,7 +101,7 @@
   background-color: var(--decorated-elements-color);
   top: 7px;
   left: 55px;
-  box-shadow: 0px 0px 4px 4px var(--decorated-elements-color);
+  box-shadow: 0px 0px 4px 2px var(--decorated-elements-color);
 }
 
 .header_decorate_element::after {
@@ -326,7 +325,7 @@
   margin-block-end: 0;
 }
 
-@media (width <= 768px), (orientation: portrait) {
+@media (width <1024px), (orientation: portrait) {
   .header__theme-menu {
     flex-direction: row-reverse;
     justify-content: end;
@@ -368,14 +367,14 @@
   }
 }
 
-@media (width <= 375px) {
+@media (width <768px) {
   .decorated-zone {
     justify-items: start;
   }
 
   .header_title {
     position: static;
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem); 
   }
 
   .decorate_bottom_corner {
